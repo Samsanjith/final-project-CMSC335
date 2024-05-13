@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Clear Playlist</title>
+    </head>
+</html>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onsubmit = alert;
+        function alert() {
+            return window.confirm("Are you sure you want to clear your playlist?")
+        }
+    </script>
+    <body>
+        <h1>Clear Your Playlist</h1>
+        <form action="http://localhost:5001/processClearPlaylist" method="post">
+            <fieldset>
+                <input type="submit" id="clear" value="Clear Playlist">
+            </fieldset>
+            <hr>
+        </form>
+        <a href="/">HOME</a>
+    </body> 
+
+</html>

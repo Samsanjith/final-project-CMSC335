@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Add Song</title>
+    </head>
+    <style>
+        body {
+            text-align: center;
+        }
+        #name {
+            width: 13rem;
+        }
+    </style>
+    <body>
+        <h1>Add a Song to Your Playlist</h1>
+        <form action="http://localhost:5001/processAddSong" method="post">
+            <fieldset>
+                Enter the Spotify ID of the Song:
+                <input type="text" name="songID" placeholder="ex: 6rqhFgbbKwnb9MLmUQDhG6">
+                <br><br>
+                <input type="submit" value="Add Song to Playlist">
+                <input type="reset" value="Reset">
+            </fieldset>
+            <hr>
+        </form>
+        <a href="/">HOME</a>
+    </body>
+    
+</html>

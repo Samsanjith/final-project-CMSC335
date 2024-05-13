@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+    </head>
+    <style>
+        body {text-align: center;}
+        .link {
+            font-size: 1.5rem;
+            border: 0.5rem groove black;
+            max-width: 15rem;
+            margin-bottom: 2rem;
+            background-color: rgba(30,215,96);
+        }
+
+        .link:hover {
+            font-size: 2rem;
+        }
+ 
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: gray;
+        }
+        input {
+            font-size: large;
+        }
+
+
+    </style>
+    <body>
+        <h1>Welcome to the Spotify Webpage</h1>
+        <br>
+        <center>
+        <div class="info">
+            <div style="margin-bottom: 2rem;">
+                <form action="http://localhost:5001/processIndex" method="post">
+                    <input type="submit" id="clear" value="IMPORANT!! Generate Spotify API Access Token Before Using this Application">
+                </form>
+            </div>
+            <div class="link">
+                <a href="/addSong">Add Song to Playlist</a>
+            </div>
+            <div class="link">
+                <a href="/viewPlaylist">View Playlist</a>
+            </div>
+            <div class="link">
+                <a href="/clearPlaylist">Clear Playlist</a>
+            </div>
+            <div class="link">
+                <a href="/searchSong">View Song Info</a>
+            </div>
+        </div>
+        </center>
+        <hr>
+    </body>
+</html>

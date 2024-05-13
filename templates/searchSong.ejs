@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>View Song Information</title>
+    </head>
+    <style>
+        body {
+            text-align: center;
+        }
+        #name {
+            width: 13rem;
+        }
+    </style>
+    <body>
+        <h1>Search Up a Song</h1>
+        <form action="http://localhost:5001/processSearchSong" method="post">
+            <fieldset>
+                Enter the Spotify ID of the Song:
+                <input type="text" id="name" name="songID" placeholder="ex: 6rqhFgbbKwnb9MLmUQDhG6">
+                <br><br>
+                <input type="submit" value="Find Song">
+                <input type="reset" value="Reset">
+            </fieldset>
+            <hr>
+        </form>
+        <a href="/">HOME</a>
+    </body>
+</html>
